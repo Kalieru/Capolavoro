@@ -51,13 +51,13 @@ class CodiceFiscale:
             #Controllo input
             Giorno_nascita = input("Inserire il giorno di nascita: ").replace(" ", "")
             while not Giorno_nascita.isdigit() or int(Giorno_nascita) == 0 or int(Giorno_nascita) > 31:
-                print("Giorno non valido")
+                print("Giorno non valido, Inserire un valore compreso tra 1 e 31")
                 Giorno_nascita = input("Inserire il giorno di nascita: ").replace(" ", "")
             Giorno_nascita = int(Giorno_nascita)
 
             Mese_nascita = input("Inserire il mese di nascita: ").replace(" ", "")
             while not Mese_nascita.isdigit() or int(Mese_nascita) == 0 or int(Mese_nascita) > 12:
-                print("Mese non valido")
+                print("Mese non valido, Inserire un valore compreso tra 1 e 12")
                 Mese_nascita = input("Inserire il mese di nascita: ").replace(" ", "")
             Mese_nascita = int(Mese_nascita)
 
